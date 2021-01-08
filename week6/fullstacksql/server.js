@@ -21,16 +21,11 @@ connection.connect((err) => {
     console.log("Connected to DB!")
 })
 
-// connection.end(err) => {
-//     console.log("Ended successfully")
-// }
-
 app.get("/", (req, res) => {
     res.send("Hello World!")
 })
 
 app.use("/data", require("./routes/dataRouter"))
-
 
 app.listen(9000, () => {
     console.log("Server is working!")
