@@ -1,0 +1,24 @@
+.navLink {
+    text-decoration: none;
+    font-family: 'Goldman', cursive;
+    margin: 20px;
+    color: blue;
+    font-size: 2em;
+}
+.heading {
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    color: red;
+    font-size: 7em;
+}
+.homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.data {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+}
