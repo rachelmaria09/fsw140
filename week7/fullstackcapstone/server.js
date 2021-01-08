@@ -18,10 +18,6 @@ connection.connect((err) => {
     console.log("Connected to DB!")
 })
 
-// connection.end(err) => {
-//     console.log("Ended successfully")
-// }
-
 app.get("/", (req, res) => {
     res.send("Hello World!")
 })

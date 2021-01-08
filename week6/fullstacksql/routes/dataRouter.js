@@ -1,5 +1,4 @@
 const express = require("express")
-// const { db, model } = require("../../../../fsw135/weekfive/models/comment")
 const dataRouter = express.Router()
 const mysql = require("mysql")
 
