@@ -1,24 +1,57 @@
 .navLink {
     text-decoration: none;
     font-family: 'Goldman', cursive;
-    margin: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 10px;
     color: blue;
-    font-size: 2em;
+    font-size: 1.4em;
+}
+.navLink:hover {
+    text-decoration: underline;
+}
+.homeHeading {
+    font-family: 'Goldman', cursive;
+    text-align: center;
+    color: red;
+    font-size: 5em;
+    line-height: 0.8em;
+    position: absolute;
 }
 .heading {
     font-family: 'Goldman', cursive;
     text-align: center;
     color: red;
-    font-size: 7em;
+    font-size: 5em;
+    line-height: 0.8em;
 }
 .homeImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
+    position: relative;
+    opacity: 0.4;
 }
 .data {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     line-height: 2em;
+}
+.btn {
+    background-color: blue;
+    border: 2px solid red;
+    color: white;
+    margin: 10px;
+    width: 60px;
+    height: 30px;
+}
+.form {
+    text-align: center;
+    background-color: black;
+
+}
+.input {
+    margin: 10px;
+    height: 30px;
 }

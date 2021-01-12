@@ -2,6 +2,8 @@ const express = require("express")
 const app = express()
 const mysql = require("mysql")
 
+app.use(express.json())
+
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",

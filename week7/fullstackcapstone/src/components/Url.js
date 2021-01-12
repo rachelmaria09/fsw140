@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Url(props) {
+    const [editing, setEdit] = useState({toggle: false, i: 0})
     return (
         <div className="url">
             <h2 className="heading">Avenger WebSites</h2>
             {props.data.map((avenger, index) => {
-          return(<div className="data">{avenger.URL}</div>)
+          return(
+            <div className="data">
+              {avenger['URL']}
+              {editing.toggle && editing.i === index ? 
+                    <div><input 
+                        name="url" 
+                        value={props.input.url} 
+                        onChange={props.handleChange} 
+                        placeholder="new URL">
+                    </input>
+                    <button className="btn"
+                        onClick={(e) => {setEdit({...editing, toggle: false});props.updateOne(index, avenger)}}>Submit</button>
+                    </div>:<button className="btn" onClick={() => {setEdit({toggle: true, i: index})}}>Edit</button>}
+                    <button className="btn" onClick={() => props.deleteOne(index, avenger)}>Delete</button>
+          </div>)
         })}
         </div>
     )
