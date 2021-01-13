@@ -10,7 +10,7 @@ function Name(props) {
           <div className="data">
               {avenger['Name/Alias']}
                 {editing.toggle && editing.i === index ? 
-                    <div><input 
+                    <div><input key={index}
                         name="name" 
                         value={props.input.name} 
                         onChange={props.handleChange} 
